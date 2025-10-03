@@ -1,3 +1,8 @@
+"""
+Script de utilidad para resetear la base de datos en desarrollo.
+⚠️ ADVERTENCIA: Este script borra TODA la base de datos.
+Solo usar en entorno de desarrollo local.
+"""
 from app.database import engine, Base 
 from sqlalchemy import text 
 

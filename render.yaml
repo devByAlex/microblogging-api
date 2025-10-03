@@ -1,0 +1,20 @@
+services:                              # Lista de servicios a crear
+  - type: web                          # Tipo: Servidor web
+    name: microblogging-api            # Nombre de tu servicio
+    env: python                        # Lenguaje: Python
+    buildCommand: pip install -r requirements.txt  # Instalar dependencias
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT  # Iniciar app
+    envVars:                           # Variables de entorno
+      - key: PYTHON_VERSION            
+        value: 3.11.0                  # Versión de Python a usar
+      - key: SECRET_KEY
+        generateValue: true            # Render genera una clave automática
+      - key: ALGORITHM
+        value: HS256                   # Algoritmo JWT
+      - key: ACCESS_TOKEN_EXPIRE_MINUTES
+        value: 30                      # Tiempo expiración token
+
+databases:                             # Base de datos
+  - name: microblog-db                # Nombre de la BD
+    databaseName: microblog_db        # Nombre interno
+    user: microblog_user              # Usuario de PostgreSQL
