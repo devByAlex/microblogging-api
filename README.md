@@ -27,6 +27,14 @@ Una API REST de microblogging que incluye análisis automático de sentimiento u
 * PostgreSQL 12+ (o SQLite para pruebas locales)
 * pip
 
+## Requisitos Previos
+
+* **URL Base:** https://microblogging-api-twfa.onrender.com
+* **Documentación Interactiva:** https://microblogging-api-twfa.onrender.com/docs
+* **Estado:** En vivo
+
+Prueba la API directamente desde la documentación interactiva de Swagger UI.
+
 ## Instalación
 
 ### 1. Clonar el repositorio
