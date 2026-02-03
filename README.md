@@ -130,7 +130,7 @@ Cada publicación es analizada automáticamente al crearse. El sistema clasifica
 
 ```json
 {
-  "content": "¡Qué día más guay hace hoy!",
+  "content": "Qué día más bueno el de hoy",
   "sentiment": "positive"
 }
 ```
